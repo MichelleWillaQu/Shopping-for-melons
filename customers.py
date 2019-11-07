@@ -54,7 +54,7 @@ def get_by_email(email):
     """Return a customer, given a email."""
     # This relies on access to the global dictionary `melon_types`
 
-    return customers[email]
+    return customers.get(email)
 
 
 # Dictionary to hold types of melons.
